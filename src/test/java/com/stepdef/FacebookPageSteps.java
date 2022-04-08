@@ -34,6 +34,8 @@ public class FacebookPageSteps extends LibGlobal {
 
 		String s = map.get("userName");
 		String s1 = map.get("password");
+		System.out.println("welcome to github");
+		System.out.println("welcome to selenium");
 
 		System.out.println(s);
 		System.out.println(s1);
