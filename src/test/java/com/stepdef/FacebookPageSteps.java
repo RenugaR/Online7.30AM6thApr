@@ -29,6 +29,13 @@ public class FacebookPageSteps extends LibGlobal {
 	public void user_enters_the_username_and_password(DataTable table) throws IOException {
 		FacebookPagePojo fb = new FacebookPagePojo();
 		// 2D with header
+		
+		//edited 
+		System.out.println("edited by User Susi");
+		System.out.println("sendind 2d with header data");
+		
+		
+		
 		List<Map<String, String>> asMaps = table.asMaps();
 		Map<String, String> map = asMaps.get(1);
 
