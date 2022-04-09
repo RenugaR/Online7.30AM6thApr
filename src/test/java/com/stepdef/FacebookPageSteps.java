@@ -31,7 +31,10 @@ public class FacebookPageSteps extends LibGlobal {
 		// 2D with header
 		List<Map<String, String>> asMaps = table.asMaps();
 		Map<String, String> map = asMaps.get(1);
-
+		System.out.println("Hello");
+		System.out.println("Welcome");
+		System.out.println("Java");
+		System.out.println("234567890-");
 		String s = map.get("userName");
 		String s1 = map.get("password");
 
