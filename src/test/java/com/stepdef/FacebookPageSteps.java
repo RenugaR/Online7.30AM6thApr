@@ -23,6 +23,7 @@ public class FacebookPageSteps extends LibGlobal {
 	@Given("User enters the url")
 	public void user_enters_the_url() {
 		getUrl("https://www.facebook.com/");
+
 	}
 
 	@When("User enters the username and password")
@@ -38,15 +39,25 @@ public class FacebookPageSteps extends LibGlobal {
 		System.out.println("welcome to selenium");
 
 		System.out.println(s);
-		System.out.println(s1);
+		String s11 = map.get("userName");
+		String s2 = map.get("password");
+		System.out.println("Hello");
+		System.out.println("Welcome");
+		System.out.println("Java");
+		System.out.println("234567890-");
 
-		insertType(fb.getTxtBoxUserName(), s);
-		insertType(fb.getTxtBoxPass(), s1);
+		System.out.println(s11);
+		System.out.println(s2);
+
+		insertType(fb.getTxtBoxUserName(), s11);
+		insertType(fb.getTxtBoxPass(), s2);
 	}
 
 	@When("User clicks the login button")
 	public void user_clicks_the_login_button() {
 		FacebookPagePojo fb = new FacebookPagePojo();
+
+		isEnabled(fb.getBtnLogIn());
 		click(fb.getBtnLogIn());
 	}
 

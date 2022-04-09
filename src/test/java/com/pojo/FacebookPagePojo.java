@@ -23,7 +23,7 @@ public class FacebookPagePojo extends LibGlobal {
 	@FindBy(id = "pass")
 	private WebElement txtBoxPass;
 
-	@FindBy(name = "login13466")
+	@FindBy(name = "login")
 	private WebElement btnLogIn;
 
 	public WebElement getTxtBoxUserName() {

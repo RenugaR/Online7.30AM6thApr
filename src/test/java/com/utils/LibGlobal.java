@@ -146,10 +146,17 @@ public class LibGlobal {
 		return displayed;
 	}
 
+	public static boolean isEnabled(WebElement ele) {
+		boolean enabled = ele.isEnabled();
+		System.out.println(enabled);
+		return enabled;
+	}
+
 	public static void switchToParentPage() {
 		driver.switchTo().defaultContent();
 	}
 
+	@SuppressWarnings("deprecation")
 	public static void implictWait(long time) {
 		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 	}
