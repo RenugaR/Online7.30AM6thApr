@@ -29,18 +29,14 @@ public class FacebookPageSteps extends LibGlobal {
 	@When("User enters the username and password")
 	public void user_enters_the_username_and_password(DataTable table) throws IOException {
 		FacebookPagePojo fb = new FacebookPagePojo();
+		isEnabled(fb.getTxtBoxUserName());
+		isEnabled(fb.getTxtBoxPass());
 		// 2D with header
 		List<Map<String, String>> asMaps = table.asMaps();
 		Map<String, String> map = asMaps.get(1);
 //Edited
 		String s1 = map.get("userName");
 		String s2 = map.get("password");
-		System.out.println("Hello");
-		System.out.println("Welcome");
-		System.out.println("Java");
-		System.out.println("234567890-");
-		System.out.println(s1);
-		System.out.println(s2);
 
 		insertType(fb.getTxtBoxUserName(), s1);
 		insertType(fb.getTxtBoxPass(), s2);
@@ -50,7 +46,7 @@ public class FacebookPageSteps extends LibGlobal {
 	public void user_clicks_the_login_button() {
 		FacebookPagePojo fb = new FacebookPagePojo();
 
-		isEnabled(fb.getBtnLogIn());
+		
 		click(fb.getBtnLogIn());
 	}
 
