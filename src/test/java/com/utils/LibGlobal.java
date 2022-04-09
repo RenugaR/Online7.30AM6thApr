@@ -156,6 +156,7 @@ public class LibGlobal {
 		driver.switchTo().defaultContent();
 	}
 
+	@SuppressWarnings("deprecation")
 	public static void implictWait(long time) {
 		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 	}
