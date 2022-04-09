@@ -48,6 +48,8 @@ public class FacebookPageSteps extends LibGlobal {
 	@When("User clicks the login button")
 	public void user_clicks_the_login_button() {
 		FacebookPagePojo fb = new FacebookPagePojo();
+		
+		isEnabled(fb.getBtnLogIn());
 		click(fb.getBtnLogIn());
 	}
 
