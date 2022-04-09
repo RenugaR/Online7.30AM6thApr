@@ -145,7 +145,12 @@ public class LibGlobal {
 		boolean displayed = ele.isDisplayed();
 		return displayed;
 	}
-
+	
+	public static boolean isSelected(WebElement ele) {
+		boolean selected = ele.isSelected();
+		return selected;
+	}
+	
 	public static boolean isEnabled(WebElement ele) {
 		boolean enabled = ele.isEnabled();
 		System.out.println(enabled);
